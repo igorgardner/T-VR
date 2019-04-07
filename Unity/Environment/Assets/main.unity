@@ -247,10 +247,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08133fd8735a47c4cb8d0970112b4ec0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stick: {fileID: 0}
-  axis: {fileID: 0}
-  turnSpeed: 0
-  position: 0
 --- !u!1 &613094527
 GameObject:
   m_ObjectHideFlags: 0
@@ -287,7 +283,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c95021241aaa8d34e81178eab1168b6a, type: 2}
+  - {fileID: 2100000, guid: 507fe391dd26c8747aab6ff7869254da, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -357,7 +353,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 666586952}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48ed124572dd77c40806a50f631c78d0, type: 3}
+  m_Script: {fileID: 11500000, guid: 30846e486dd083d42a852a39ec4cbefb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &941897233
@@ -373,6 +369,7 @@ GameObject:
   - component: {fileID: 941897235}
   - component: {fileID: 941897234}
   - component: {fileID: 941897238}
+  - component: {fileID: 941897240}
   - component: {fileID: 941897239}
   m_Layer: 0
   m_Name: Main Camera
@@ -462,44 +459,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 941897233}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00db858c1f8ff90478dad0aa1bac9a2c, type: 3}
+  m_Script: {fileID: 11500000, guid: 517fed90736451441a056df941310f01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  TwoUsers: 0
-  NearMode: 0
-  ComputeUserMap: 0
-  ComputeColorMap: 0
-  DisplayUserMap: 0
-  DisplayColorMap: 0
-  DisplaySkeletonLines: 1
-  DisplayMapsWidthPercent: 20
-  SensorHeight: 1
-  SensorAngle: 15
-  MinUserDistance: 1
-  MaxUserDistance: 0
-  DetectClosestUser: 1
-  IgnoreInferredJoints: 1
-  smoothing: 1
-  UseBoneOrientationsFilter: 0
-  UseClippedLegsFilter: 0
-  UseBoneOrientationsConstraint: 0
-  UseSelfIntersectionConstraint: 0
-  Player1Avatars: []
-  Player2Avatars: []
-  Player1CalibrationPose: 0
-  Player2CalibrationPose: 0
-  Player1Gestures: 100000000000000000000000
-  Player2Gestures: 
-  MinTimeBetweenGestures: 0.7
-  GestureListeners:
-  - {fileID: 941897239}
-  stick: {fileID: 978149899}
-  wheel: {fileID: 1024035232}
-  CalibrationText: {fileID: 0}
-  HandCursor1: {fileID: 0}
-  HandCursor2: {fileID: 0}
-  ControlMouseCursor: 0
-  GesturesDebugText: {fileID: 0}
 --- !u!114 &941897239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -509,9 +471,54 @@ MonoBehaviour:
   m_GameObject: {fileID: 941897233}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54b9637035d55784cbbe08ec594f34d0, type: 3}
+  m_Script: {fileID: 11500000, guid: beb2a4331c31f444e8b7a6bdbaa1bc7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &941897240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941897233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ffcee7c05eaf814092b25dfe168ab2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  seated: 1
+  TwoUsers: 0
+  ComputeUserMap: 1
+  ComputeColorMap: 0
+  DisplayUserMap: 1
+  DisplayColorMap: 0
+  DisplaySkeletonLines: 1
+  DisplayMapsWidthPercent: 20
+  SensorHeight: 1
+  SensorAngle: 0
+  MinUserDistance: 1
+  MaxUserDistance: 0
+  DetectClosestUser: 1
+  IgnoreInferredJoints: 0
+  smoothing: 1
+  UseBoneOrientationsFilter: 0
+  UseClippedLegsFilter: 0
+  UseBoneOrientationsConstraint: 0
+  UseSelfIntersectionConstraint: 0
+  Player1Avatars: []
+  Player2Avatars: []
+  Player1CalibrationPose: 0
+  Player2CalibrationPose: 0
+  Player1Gestures: 
+  Player2Gestures: 
+  MinTimeBetweenGestures: 0.7
+  GestureListeners:
+  - {fileID: 941897239}
+  CalibrationText: {fileID: 0}
+  HandCursor1: {fileID: 0}
+  HandCursor2: {fileID: 0}
+  ControlMouseCursor: 0
+  GesturesDebugText: {fileID: 0}
 --- !u!1 &978149898
 GameObject:
   m_ObjectHideFlags: 0
@@ -538,13 +545,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 978149898}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08133fd8735a47c4cb8d0970112b4ec0, type: 3}
+  m_Script: {fileID: 11500000, guid: 230e6eea0640a654baf69ccea190d559, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   stick: {fileID: 978149898}
   axis: {fileID: 104183969}
-  turnSpeed: 50
-  position: 0
 --- !u!4 &978149902
 Transform:
   m_ObjectHideFlags: 0
@@ -599,7 +604,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f62bac0fe755945458830517f28f90ed, type: 2}
+  - {fileID: 2100000, guid: 3d868819d4640db488d4066ff6f8cd47, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -664,7 +669,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1024035226}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35243b0695c146b48903792315ea32d3, type: 3}
+  m_Script: {fileID: 11500000, guid: 2943a437d6962494c9517371cf1918db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1233810849
@@ -815,7 +820,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 601b0aadae682e74f8016310222d7723, type: 2}
+  - {fileID: 2100000, guid: 45fd0c95f44173147b2a4e091b24f639, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -972,7 +977,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f12e46cfd7167c4479d8d0b9bc51cc9f, type: 2}
+  - {fileID: 2100000, guid: f7d1d523574eddc418a661488d7b4bd7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1040,7 +1045,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08133fd8735a47c4cb8d0970112b4ec0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stick: {fileID: 0}
-  axis: {fileID: 0}
-  turnSpeed: 0
-  position: 0
