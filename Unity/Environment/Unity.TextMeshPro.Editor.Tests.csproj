@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{89BB1685-CD03-B369-C862-B48C21AB2019}</ProjectGuid>
+    <ProjectGuid>{DAE726C7-8F58-2FFA-C2A0-507D3B3FE35B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.TextMeshPro.Editor.Tests</AssemblyName>
@@ -306,19 +306,19 @@
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Advertisements">
-      <HintPath>F:/T-VR/Unity/Environment - Copy/Packages/com.unity.ads/Editor/UnityEditor.Advertisements.dll</HintPath>
+      <HintPath>F:/T-VR/Unity/Environment/Packages/com.unity.ads/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>F:/T-VR/Unity/Environment - Copy/Packages/com.unity.analytics/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>F:/T-VR/Unity/Environment/Packages/com.unity.analytics/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>F:/T-VR/Unity/Environment - Copy/Packages/com.unity.analytics/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>F:/T-VR/Unity/Environment/Packages/com.unity.analytics/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>F:/T-VR/Unity/Environment - Copy/Packages/com.unity.analytics/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>F:/T-VR/Unity/Environment/Packages/com.unity.analytics/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Purchasing">
-      <HintPath>F:/T-VR/Unity/Environment - Copy/Packages/com.unity.purchasing/Editor/UnityEditor.Purchasing.dll</HintPath>
+      <HintPath>F:/T-VR/Unity/Environment/Packages/com.unity.purchasing/Editor/UnityEditor.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>F:/Program Files/Unity/2018.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/mscorlib.dll</HintPath>
@@ -350,11 +350,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.TextMeshPro.csproj">
-      <Project>{551D0286-521D-A553-7956-D8929728B30D}</Project>
+      <Project>{58A50B21-C674-E3D7-3756-B47FC8A6A809}</Project>
       <Name>Unity.TextMeshPro</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
-      <Project>{9FB68B79-647B-AFB8-2E96-224466FA7290}</Project>
+      <Project>{29769DA0-7A36-39C1-C37B-A08DFD3D0D95}</Project>
       <Name>Unity.TextMeshPro.Editor</Name>
     </ProjectReference>
   </ItemGroup>

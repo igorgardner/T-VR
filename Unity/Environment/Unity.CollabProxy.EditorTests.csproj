@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{90F4E341-5A1F-612A-A39F-7D82BCE5A8B9}</ProjectGuid>
+    <ProjectGuid>{91A9EAEE-09E0-184C-440F-8591137A5628}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.CollabProxy.EditorTests</AssemblyName>
@@ -306,19 +306,19 @@
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Advertisements">
-      <HintPath>F:/T-VR/Unity/Environment - Copy/Packages/com.unity.ads/Editor/UnityEditor.Advertisements.dll</HintPath>
+      <HintPath>F:/T-VR/Unity/Environment/Packages/com.unity.ads/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>F:/T-VR/Unity/Environment - Copy/Packages/com.unity.analytics/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>F:/T-VR/Unity/Environment/Packages/com.unity.analytics/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>F:/T-VR/Unity/Environment - Copy/Packages/com.unity.analytics/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>F:/T-VR/Unity/Environment/Packages/com.unity.analytics/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>F:/T-VR/Unity/Environment - Copy/Packages/com.unity.analytics/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>F:/T-VR/Unity/Environment/Packages/com.unity.analytics/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Purchasing">
-      <HintPath>F:/T-VR/Unity/Environment - Copy/Packages/com.unity.purchasing/Editor/UnityEditor.Purchasing.dll</HintPath>
+      <HintPath>F:/T-VR/Unity/Environment/Packages/com.unity.purchasing/Editor/UnityEditor.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>F:/Program Files/Unity/2018.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/mscorlib.dll</HintPath>
@@ -350,7 +350,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.CollabProxy.Editor.csproj">
-      <Project>{B148690B-3729-AEAD-B1D9-0254CBEFD9B5}</Project>
+      <Project>{E9797593-2C9A-98EE-168D-D85555998A06}</Project>
       <Name>Unity.CollabProxy.Editor</Name>
     </ProjectReference>
   </ItemGroup>

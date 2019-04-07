@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{3AD80B7C-CC23-9D6A-016D-33F8A428F2EB}</ProjectGuid>
+    <ProjectGuid>{E8AC8F00-E908-4D65-990A-D5ADAF2D0126}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -280,13 +280,13 @@
       <HintPath>F:/Program Files/Unity/2018.3.6f1/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>F:/T-VR/Unity/Environment - Copy/Packages/com.unity.analytics/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>F:/T-VR/Unity/Environment/Packages/com.unity.analytics/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>F:/T-VR/Unity/Environment - Copy/Packages/com.unity.analytics/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>F:/T-VR/Unity/Environment/Packages/com.unity.analytics/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>F:/T-VR/Unity/Environment - Copy/Packages/com.unity.analytics/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>F:/T-VR/Unity/Environment/Packages/com.unity.analytics/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>F:/Program Files/Unity/2018.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/mscorlib.dll</HintPath>
@@ -318,23 +318,23 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.TextMeshPro.Editor.csproj">
-      <Project>{9FB68B79-647B-AFB8-2E96-224466FA7290}</Project>
+      <Project>{29769DA0-7A36-39C1-C37B-A08DFD3D0D95}</Project>
       <Name>Unity.TextMeshPro.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.PackageManagerUI.Editor.csproj">
-      <Project>{78B19A81-00A9-3776-45A0-91CFEAFA8B7A}</Project>
+      <Project>{4C5C64A6-56FD-03E2-24C6-EF547944FBEB}</Project>
       <Name>Unity.PackageManagerUI.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.CollabProxy.Editor.csproj">
-      <Project>{B148690B-3729-AEAD-B1D9-0254CBEFD9B5}</Project>
+      <Project>{E9797593-2C9A-98EE-168D-D85555998A06}</Project>
       <Name>Unity.CollabProxy.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.TextMeshPro.csproj">
-      <Project>{551D0286-521D-A553-7956-D8929728B30D}</Project>
+      <Project>{58A50B21-C674-E3D7-3756-B47FC8A6A809}</Project>
       <Name>Unity.TextMeshPro</Name>
     </ProjectReference>
     <ProjectReference Include="Unity.Analytics.DataPrivacy.csproj">
-      <Project>{8EA7FF6B-79F4-13FB-87D2-674A99895EB7}</Project>
+      <Project>{227407EC-70D5-58F3-06A8-9550FFFC4C53}</Project>
       <Name>Unity.Analytics.DataPrivacy</Name>
     </ProjectReference>
   </ItemGroup>

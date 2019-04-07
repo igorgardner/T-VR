@@ -10,7 +10,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace>
     </RootNamespace>
-    <ProjectGuid>{78B19A81-00A9-3776-45A0-91CFEAFA8B7A}</ProjectGuid>
+    <ProjectGuid>{4C5C64A6-56FD-03E2-24C6-EF547944FBEB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Unity.PackageManagerUI.Editor</AssemblyName>
@@ -369,19 +369,19 @@
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Advertisements">
-      <HintPath>F:/T-VR/Unity/Environment - Copy/Packages/com.unity.ads/Editor/UnityEditor.Advertisements.dll</HintPath>
+      <HintPath>F:/T-VR/Unity/Environment/Packages/com.unity.ads/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>F:/T-VR/Unity/Environment - Copy/Packages/com.unity.analytics/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>F:/T-VR/Unity/Environment/Packages/com.unity.analytics/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>F:/T-VR/Unity/Environment - Copy/Packages/com.unity.analytics/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>F:/T-VR/Unity/Environment/Packages/com.unity.analytics/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>F:/T-VR/Unity/Environment - Copy/Packages/com.unity.analytics/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>F:/T-VR/Unity/Environment/Packages/com.unity.analytics/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Purchasing">
-      <HintPath>F:/T-VR/Unity/Environment - Copy/Packages/com.unity.purchasing/Editor/UnityEditor.Purchasing.dll</HintPath>
+      <HintPath>F:/T-VR/Unity/Environment/Packages/com.unity.purchasing/Editor/UnityEditor.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
       <HintPath>F:/Program Files/Unity/2018.3.6f1/Editor/Data/MonoBleedingEdge/lib/mono/2.0-api/mscorlib.dll</HintPath>
