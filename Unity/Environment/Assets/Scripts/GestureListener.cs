@@ -42,6 +42,8 @@ public class GestureListener : MonoBehaviour, KinectGestures.GestureListenerInte
 		KinectManager manager = KinectManager.Instance;
 		
         manager.DetectGesture(userId, KinectGestures.Gestures.Wheel);
+        manager.DetectGesture(userId, KinectGestures.Gestures.RightAboveHead);
+        manager.DetectGesture(userId, KinectGestures.Gestures.LeftAboveHead);
 
 	}
 	
@@ -64,9 +66,9 @@ public class GestureListener : MonoBehaviour, KinectGestures.GestureListenerInte
 		Debug.Log(gesture + " detected");
 		
 		
-		if(gesture == KinectGestures.Gestures.RaiseRightHand)
+		if(gesture == KinectGestures.Gestures.LeftAboveHead)
 			pull = true;
-		else if(gesture == KinectGestures.Gestures.RaiseLeftHand)
+		else if(gesture == KinectGestures.Gestures.RightAboveHead)
 			push = true;
 
 		return true;

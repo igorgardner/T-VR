@@ -15,44 +15,47 @@ public class GearStick : MonoBehaviour {
         gestureListener = Camera.main.GetComponent<GestureListener>();
     }
 
-    public void MoveForward()
+    public string GetPosition()
     {
-        if (position < 5)
-        {
-            stick.transform.RotateAround(axis.transform.position, Vector3.right, 10);
-            position++;
-        }
-    }
-
-    public void MoveBack()
-    {
-        if (position > -5)
-        {
-            stick.transform.RotateAround(axis.transform.position, -Vector3.right, 10);
-            position--;
-        }
+        return position.ToString();
     }
 
     // Update is called once per frame
     void Update ()
     {
-        if(gestureListener.IsPush())
+        if(Input.GetKeyDown(KeyCode.W)) // above head guesture
         {
-            if (position < 5)
+            if (position < 2)
             {
-                stick.transform.RotateAround(axis.transform.position, Vector3.right, 10);
+                stick.transform.RotateAround(axis.transform.position, Vector3.right, 20);
                 position++;
             }
         }
-
-        if(gestureListener.IsPull())
+        else if(Input.GetKeyDown(KeyCode.S))
         {
-            if(position > -5)
+            if(position > -1)
             {
-                stick.transform.RotateAround(axis.transform.position, -Vector3.right, 10);
+                stick.transform.RotateAround(axis.transform.position, -Vector3.right, 20);
                 position--;
             }
         }
-        
+
+        if (gestureListener.IsPush()) // above head guesture
+        {
+            if (position < 2)
+            {
+                stick.transform.RotateAround(axis.transform.position, Vector3.right, 20);
+                position++;
+            }
+        }
+        else if (gestureListener.IsPull())
+        {
+            if (position > -1)
+            {
+                stick.transform.RotateAround(axis.transform.position, -Vector3.right, 20);
+                position--;
+            }
+        }
+
     }
 }
