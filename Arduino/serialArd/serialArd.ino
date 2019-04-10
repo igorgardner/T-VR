@@ -7,42 +7,36 @@ String input;
 
 void fwd1()
 {
-  analogWrite(fwdPin, 140);
-  digitalWrite(bckPin, 1);
+
 }
 void fwd2()
 {
-  digitalWrite(fwdPin, 0);
-  digitalWrite(bckPin, 1);
+  
 }
 void stp()
 {
-  digitalWrite(fwdPin, 1);
-  digitalWrite(bckPin, 1);
+  
 }
 void bck()
 {
-  analogWrite(bckPin, 140);
-  digitalWrite(fwdPin, 1);
+  
 }
 void left()
 {
-  digitalWrite(lftPin, 0);
-  digitalWrite(rgtPin, 1);
+  
 }
 void right()
 {
-  digitalWrite(lftPin, 1);
-  digitalWrite(rgtPin, 0);
+  
 }
 void centre()
 {
-  digitalWrite(lftPin, 1);
-  digitalWrite(rgtPin, 1);
+  
 }
 
 void setup() 
 {
+  Serial.setTimeout(50);
   Serial.begin(9600);
   while(!Serial){;}
     
@@ -63,19 +57,42 @@ void loop()
   {
     input = Serial.readString();
 
-    if(input.indexOf("Speed: 2") != -1)
-      fwd2();
-    if(input.indexOf("Speed: 1") != -1)
-     fwd1();
-    if(input.indexOf("Speed: 0") != -1)
-      stp();
-    if(input.indexOf("Speed: -1") != -1)
-     bck();
-    if(input.indexOf("Steer: 1") != -1)
-     left();
-    if(input.indexOf("Steer: 0") != -1)
-     centre();
-    if(input.indexOf("Steer: -1") != -1)
-     right();
+    Serial.println(input[1]);
+
+    if(input[0] == '7') //sp2
+      {
+        digitalWrite(fwdPin, 0);
+        digitalWrite(bckPin, 1);
+      }
+    else if(input[0] == '6') //sp1
+     {
+        analogWrite(fwdPin, 200);
+        digitalWrite(bckPin, 1);
+     }
+    else if(input[0] == '5') //sp0
+      {
+        digitalWrite(fwdPin, 1);
+        digitalWrite(bckPin, 1);
+      }
+    else if(input[0] == '4') //sp-1
+     {
+      analogWrite(bckPin, 200);
+      digitalWrite(fwdPin, 1);
+     }
+     if(input[1] == '3') //st1
+     {
+      digitalWrite(lftPin, 0);
+      digitalWrite(rgtPin, 1);
+     }
+    else if(input[1] == '2') //st0
+     {
+      digitalWrite(lftPin, 1);
+      digitalWrite(rgtPin, 1);
+     }
+    else if(input[1] == '1') //st-1
+     {
+      digitalWrite(lftPin, 1);
+      digitalWrite(rgtPin, 0);
+     }
   }
 }

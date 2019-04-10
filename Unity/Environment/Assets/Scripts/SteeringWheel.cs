@@ -19,13 +19,12 @@ public class SteeringWheel : MonoBehaviour
 
     public string GetAngle()
     {
-        Debug.Log(angle);
         if (angle < -10.0)
             return "1";
         else if (angle > 10.0)
-            return "-1";
+            return "3";
         else
-            return "0";
+            return "2";
     }
 
     void Update()

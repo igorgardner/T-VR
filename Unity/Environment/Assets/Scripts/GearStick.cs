@@ -17,7 +17,23 @@ public class GearStick : MonoBehaviour {
 
     public string GetPosition()
     {
-        return position.ToString();
+        switch(position)
+        {
+            case 2:
+                return "7";
+
+            case 1:
+                return "6";
+
+            case 0:
+                return "5";
+
+            case -1:
+                return "4";
+
+            default:
+                return "0";
+        }
     }
 
     // Update is called once per frame

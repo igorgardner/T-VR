@@ -25,9 +25,8 @@ public class SerialComs : MonoBehaviour
     {
         if (port.IsOpen)
         {
-            port.WriteLine("instruct");
-            port.WriteLine(wheel.GetAngle());
-            port.WriteLine(stick.GetPosition());
+            port.Write(stick.GetPosition() + wheel.GetAngle());
+            Debug.Log(port.ReadLine());
         }
     }
 }
