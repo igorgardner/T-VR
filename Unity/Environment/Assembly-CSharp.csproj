@@ -61,7 +61,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\AvatarController.cs" />
     <Compile Include="Assets\Scripts\CameraTexture.cs" />
     <Compile Include="Assets\Scripts\Filters\BoneOrientationsConstraint.cs" />
     <Compile Include="Assets\Scripts\Filters\BoneOrientationsFilter.cs" />
@@ -76,7 +75,7 @@
     <Compile Include="Assets\Scripts\KinectGestures.cs" />
     <Compile Include="Assets\Scripts\KinectManager.cs" />
     <Compile Include="Assets\Scripts\KinectWrapper.cs" />
-    <Compile Include="Assets\Scripts\MouseControl.cs" />
+    <Compile Include="Assets\Scripts\SerialComs.cs" />
     <Compile Include="Assets\Scripts\SteeringWheel.cs" />
     <Reference Include="UnityEngine.AIModule">
       <HintPath>F:/Program Files/Unity/2018.3.6f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
